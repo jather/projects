@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    font-size: 16px;
+    }
+       
+ h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    }
+       
+h1 {
+    font-size: 4em;
+     }
+       
+h2 {
+    font-size: 1.75em;
+    }
+.main-nav, footer {
+        font-size: 0.8em;
+    }
+       
+.fine-print {
+        font-size: 0.6em;
+       }
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+#img-div {
+    display:block;
+    max-width: 50%;
+    margin:auto;
+}
+@media (max-width: 800px) {
+    #img-div {
+        max-width: 80%;
+    }
+}
