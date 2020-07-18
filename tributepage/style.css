@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'charterregular';
+    src: url('https://juyong.me/fonts/charter_regular-webfont.woff2') format('woff2'),
+         url('https://juyong.me/fonts/charter_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     text-align: center;
     font-size: 16px;
@@ -14,7 +21,7 @@ h1 {
 h2 {
     font-size: 1.75em;
     }
-.main-nav, footer {
+footer {
         font-size: 0.8em;
     }
        
@@ -24,15 +31,26 @@ h2 {
 img {
     max-width: 100%;
     height: auto;
+    display:block
   }
 
 #img-div {
-    display:block;
-    max-width: 50%;
     margin:auto;
+    max-width: 90%;
 }
-@media (max-width: 800px) {
+html{
+    background-color: #444444;
+}
+
+#main {
+    display:flex;
+    flex-direction: column;
+    max-width:70%;
+    margin:auto;
+    background-color: #BBBBBB;
+}
+@media (max-width: 600px) {
     #img-div {
-        max-width: 80%;
+        max-width: 100%;
     }
 }
