@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title id="title">Survey Form</title>
+    <title>Survey Form</title>
 </head>
 <body>
 <main>
@@ -31,19 +31,19 @@
             <fieldset>
             <legend>Have you had pineapple on pizza in the last 7 days?</legend>
             <label for="yes">
-                <input id="yes" type="radio" name="like" value="yes"> Yes
+                <input id="yes" type="radio" name="recent" value="yes"> Yes
             </label>
             <label for="no">
-                <input id="no" type="radio" name="like" value="no"> No
+                <input id="no" type="radio" name="recent" value="no"> No
             </label>
-            <label for="somewhat">
-                <input id="somewhat" type="radio" name="like"> Don't remember
+            <label for="idk">
+                <input id="somewhat" type="radio" name="recent" value="idk"> Don't remember
             </label>
             </fieldset>
         </div>
         <div>
-            <label for="number">Scale of 1-10, how much do you like pineapple on pizza?</label>
-            <input type="number" id="number" name="howmuchlike" required min="1" max="10">
+            <label for="number" id="number-label">Scale of 1-10, how much do you like pineapple on pizza?</label>
+            <input type="number" id="number" name="howmuchlike" required min="1" max="10" placeholder="1-10">
         <div>
             <fieldset>
                 <legend>Select other kinds of pizza toppings that you like, if any.</legend>
@@ -66,7 +66,7 @@
              <textarea name="comments" placeholder="additional comments (optional)"></textarea>
         </div>
         <div>
-             <button type="submit">Submit</button>
+             <button type="submit" id="submit">Submit</button>
         </div>
     </form>
 
