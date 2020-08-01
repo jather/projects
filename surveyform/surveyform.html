@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +8,66 @@
 </head>
 <main>
     <h1 id="title">Survey Form</h1>
-    <p id="description">This is a survey for X</p>
+    <p id="description">This is a survey for whether or not you like pineapple on pizza.</p>
     <form id="survey-form">
-        <input type="text">
-        <button type="submit">Submit</button>
+        <div>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="your name here" required>
+        </div>
+        <div>
+            <label for="email" id="email-label">E-mail</label>
+            <input type="email" id="email" placeholder="your email address here" required>
+         </div>
+         <div>
+            <label for="dropdown">Choose your age group</label>
+            <select id="dropdown">
+                <option value="zoomer"><18</option>
+                <option value="18-30">18-30</option>
+                <option value="31-50">31-50</option>
+                <option value=">50">>50</option>
+            </select>
+        </div>
+        <div>
+            <fieldset>
+            <legend>Have you had pineapple on pizza in the last 7 days?</legend>
+            <label for="yes">
+                <input id="yes" type="radio" name="like" value="yes"> Yes
+            </label>
+            <label for="no">
+                <input id="no" type="radio" name="like" value="no"> No
+            </label>
+            <label for="somewhat">
+                <input id="somewhat" type="radio" name="like"> Don't remember
+            </label>
+            </fieldset>
+        </div>
+        <div>
+            <label for="number">Scale of 1-10, how much do you like pineapple on pizza?</label>
+            <input type="number" id="number" name="howmuchlike" required min="1" max="10">
+        <div>
+            <fieldset>
+                <legend>Select other kinds of pizza toppings that you like, if any.</legend>
+                <label for="pepperoni">
+                    <input id="pepperoni" type="checkbox" name="others" value="pepperoni"> Pepperoni
+                </label>
+                <label for="Shrimp">
+                    <input id="shrimp" type="checkbox" name="others" value="shrimp"> Shrimp
+                </label>
+                <label for="Olives">
+                    <input id="olives" type="checkbox" name="others" value="olives"> Olives
+                </label>
+                <label for="Bananas">
+                    <input id="bananas" type="checkbox" name="others" value="bananas"> bananas
+                </label>
+            </fieldset>
+        </div>
+        </div>
+        <div>
+             <textarea name="comments" placeholder="additional comments (optional)"></textarea>
+        </div>
+        <div>
+             <button type="submit">Submit</button>
+        </div>
     </form>
 </main>
 </html>

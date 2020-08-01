@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(183, 204, 162);
+    }  
+ h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+h1 {
+    font-size: 4em;
+    color:rgb(109, 22, 22);
+     } 
+h2 {
+    font-size: 3em;
+    }
+form{
+        max-width:500px;
+        margin:auto;
+    }
+textarea{
+    max-width:100%;
+}
